@@ -17,7 +17,15 @@ const Signup = () => {
                     <FaUser className='icon'/>
                 </div>
                 <div className="input-box">
-                    <input type="text" placeholder='Username' required />
+                    <input type="text" placeholder='EmployeeID' required />
+                    <FaUser className='icon'/>
+                </div>
+                <div className="input-box">
+                    <input type="text" placeholder='First Name' required />
+                    <FaUser className='icon'/>
+                </div>
+                <div className="input-box">
+                    <input type="text" placeholder='Last Name' required />
                     <FaUser className='icon' />
                 </div>
                 <div className="input-box">
