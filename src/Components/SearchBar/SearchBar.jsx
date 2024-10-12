@@ -13,7 +13,7 @@ const SearchBar = () => {
                     alt=""
                     className="searchIcon"
                 />
-                <label htmlFor="searchInput" className="visually-hidden">
+                <label htmlFor="searchInput" className="visually-hidden-search">
                     Search
                 </label>
                 <input

@@ -3,7 +3,7 @@ import './UploadWidget.css'; // Import your external CSS file
 
 function UploadWidget() {
     return (
-        <section className="container">
+        <section className="uploadContainer">
             <div className="content">
                 <div className="column">
                     <div className="uploadArea">

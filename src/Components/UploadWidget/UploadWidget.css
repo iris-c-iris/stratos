@@ -1,4 +1,4 @@
-.container {
+.uploadContainer {
     max-width: 617px;
     border-radius: 20px;
     background-color: rgba(17, 28, 68, 1);
@@ -7,7 +7,7 @@
 }
 
 @media (max-width: 991px) {
-    .container {
+    .uploadContainer {
         padding: 0 20px;
     }
 }
@@ -89,14 +89,3 @@
 
 
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-}

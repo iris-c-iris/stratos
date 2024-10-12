@@ -1,22 +1,7 @@
+
 .test-page {
-    padding-top: 70px;
-    display: flex;
-    flex-direction: row;  /* Align sidebar and form side by side */
-}
-
-.wrapper {
-    flex: 1;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
+    display: flex; /* Flexbox layout */
+    padding-top: 10px; /* Padding for the top */
 }
 
 .SideBar {
@@ -25,3 +10,19 @@ form {
     color: #fff;
     height: 100vh;
 }
+.content-container {
+    display: flex; /* Flexbox layout for the main content area */
+    flex: 3; /* Content area takes up more space */
+    flex-direction: column; /* Stack items vertically in this area */
+    padding-left: 10px; /* Space between sidebar and content */
+}
+
+.upload-container {
+    display: flex; /* Keep Upload Widget flexible */
+    align-items: flex-start; /* Align Upload Widget to the top */
+}
+
+.complex-table-container {
+    margin-top: auto; /* Space between Upload Widget and Complex Table */
+}
+

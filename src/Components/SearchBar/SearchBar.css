@@ -63,7 +63,7 @@
     margin: auto 0;
 }
 
-.visually-hidden {
+.visually-hidden-search {
     position: absolute;
     width: 1px;
     height: 1px;
