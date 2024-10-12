@@ -1,28 +1,38 @@
-
 .test-page {
-    display: flex; /* Flexbox layout */
-    padding-top: 10px; /* Padding for the top */
+    display: flex;
 }
 
-.SideBar {
-    width: 250px;
-    background-color: #111c44;
-    color: #fff;
-    height: 100vh;
-}
 .test-content-container {
-    display: flex; /* Flexbox layout for the main content area */
-    flex: 3; /* Content area takes up more space */
-    flex-direction: column; /* Stack items vertically in this area */
-    padding-left: 10px; /* Space between sidebar and content */
+    display: flex;
+    flex-direction: column;
+    margin-left: 0; /* Align content directly next to sidebar */
+    padding-right: 300px;
+    padding-top: 10px;
 }
 
-.upload-container {
-    display: flex; /* Keep Upload Widget flexible */
-    align-items: flex-start; /* Align Upload Widget to the top */
+
+.widget-container {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.upload-container,
+.task-counter-container {
+    display: flex;
+    align-items: flex-start;
 }
 
 .complex-table-container {
-    margin-top: auto; /* Space between Upload Widget and Complex Table */
+    padding-top: 0;
 }
 
+@media (max-width: 991px) {
+    .test-content-container {
+        padding-left: 0px;
+    }
+
+    .widget-container {
+        flex-direction: column;
+    }
+}

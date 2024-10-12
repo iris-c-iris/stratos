@@ -1,0 +1,48 @@
+.taskCounter {
+    border-radius: 20px;
+    background-color: rgba(17, 28, 68, 1);
+    display: flex;
+    min-width: 240px;
+    gap: 18px;
+    overflow: hidden;
+    font-weight: 700;
+    flex-grow: 1;
+    width: 199px;
+    padding: 21px 50px 21px 17px;
+}
+
+@media (max-width: 991px) {
+    .taskCounter {
+        padding-right: 20px;
+    }
+}
+
+.taskIcon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 56px;
+}
+
+.taskInfo {
+    align-self: start;
+    display: flex;
+    margin-top: 4px;
+    flex-direction: column;
+}
+
+.taskLabel {
+    color: rgba(163, 174, 208, 1);
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: -0.32px;
+}
+
+.taskCount {
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: -0.36px;
+    align-self: start;
+    margin-top: 11px;
+}

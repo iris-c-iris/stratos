@@ -1,26 +1,22 @@
 import React from 'react';
 import './TestPage.css';
 import SideBarEmployee from "../../../Components/SideBarEmployee/SideBarEmployee";
-import ActionIcon from "../../../Components/SearchBar/ActionIcon";
 import Header from "../../../Components/Header/Header";
 import UploadWidget from "../../../Components/UploadWidget/UploadWidget";
 import ComplexTable from "../../../Components/InOutTable/ComplexTable";
+import TaskCounter from "../../../Components/cardWidgets/TaskCounter";
 
 const TestPage = () => {
     return (
         <div className='test-page'>
-            <div className='sidebar-container'>
-                <SideBarEmployee />
-            </div>
+            <SideBarEmployee />
             <div className='test-content-container'>
-                <ActionIcon />
                 <Header />
-                <div className='upload-container'>
+                <div className='widget-container'>
                     <UploadWidget />
+                    <TaskCounter />
                 </div>
-                <div className='complex-table-container'>
-                    <ComplexTable />
-                </div>
+                <ComplexTable />
             </div>
         </div>
     );
