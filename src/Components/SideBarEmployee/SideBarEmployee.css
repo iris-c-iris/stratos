@@ -1,6 +1,6 @@
 .SideBarEmployee {
     display: flex;
-    max-width: 290px;
+    max-width: 290px; /* Keep a max width for larger screens */
     flex-direction: column;
     overflow: hidden;
     color: #fff;
@@ -9,47 +9,50 @@
     font-weight: 500;
     font-size: 16px;
     font-family: 'DM Sans', -apple-system, Roboto, Helvetica, sans-serif;
+    height: 100vh; /* Full height of the viewport */
 }
 
 .sideBarContent {
     background-color: #111c44;
     display: flex;
-    width: 100%;
     flex-direction: column;
     overflow: hidden;
-    padding: 130px 0 671px;
+    padding: 130px 0 20px; /* Adjust bottom padding for smaller screens */
+    flex-grow: 1; /* Allow it to take available vertical space */
 }
 
 .logo {
     width: 100%;
+    max-height: 60px; /* Maintain a maximum height for logos */
     object-fit: contain;
     object-position: center;
 }
 
 .menuItems {
     display: flex;
-    width: 100%;
-    padding-left: 31px;
     flex-direction: column;
     align-items: flex-start;
-    margin: 38px 0; /* Remove negative margin unless necessary */
+    padding-left: 31px;
+    margin: 20px 0; /* Adjust margin for better spacing */
+    flex-grow: 1; /* Allow items to grow */
+    overflow-y: auto; /* Enable scrolling if content overflows */
 }
 
 .SideBarItem {
     display: flex;
     width: 100%;
     gap: 12px;
-    margin-top: 26px;
-    white-space: nowrap;
+    margin-top: 20px; /* Reduce top margin for compactness */
+    white-space: nowrap; /* Prevent wrapping */
     align-items: center;
 }
 
 .icon {
-    aspect-ratio: 1;
-    object-fit: contain;
+    aspect-ratio: 1; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure icon fits within box */
     object-position: center;
-    width: 24px;
-    margin: auto 0;
+    width: 24px; /* Fixed width for icons */
+    margin: auto 0; /* Center vertically */
 }
 
 .activeIndicator {
@@ -57,9 +60,29 @@
     background-color: #0000ff;
     width: 4px;
     height: 36px;
-    margin-left: auto;
+    margin-left: auto; /* Align to the right */
 }
 
 .active {
     font-weight: 700;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .SideBarEmployee {
+        max-width: 200px; /* Reduce max width for smaller screens */
+        padding: 10px; /* Adjust padding for compactness */
+    }
+
+    .sideBarContent {
+        padding: 80px 0 20px; /* Adjust padding for smaller screens */
+    }
+
+    .menuItems {
+        padding-left: 15px; /* Reduce padding on smaller screens */
+    }
+
+    .SideBarItem {
+        margin-top: 15px; /* Adjust spacing for smaller screens */
+    }
 }
