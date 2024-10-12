@@ -1,0 +1,64 @@
+.SideBar {
+    display: flex;
+    max-width: 290px;
+    flex-direction: column;
+    overflow: hidden;
+    color: #fff;
+    letter-spacing: -0.32px;
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'DM Sans', -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.sideBarContent {
+    background-color: #111c44;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 130px 0 671px;
+}
+
+.logo {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.menuItems {
+    display: flex;
+    width: 100%;
+    padding-left: 31px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 38px 0; /* Remove negative margin unless necessary */
+}
+
+.SideBarItem {
+    display: flex;
+    width: 100%;
+    gap: 12px;
+    margin-top: 26px;
+    white-space: nowrap;
+}
+
+.icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 24px;
+    margin: auto 0;
+}
+
+.activeIndicator {
+    border-radius: 25px;
+    background-color: #7551ff;
+    width: 4px;
+    height: 36px;
+    margin-left: auto;
+}
+
+.active {
+    font-weight: 700;
+}

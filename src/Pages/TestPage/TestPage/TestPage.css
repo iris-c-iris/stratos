@@ -1,0 +1,27 @@
+.test-page {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: row;  /* Align sidebar and form side by side */
+}
+
+.wrapper {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.SideBar {
+    width: 250px;
+    background-color: #111c44;
+    color: #fff;
+    height: 100vh;
+}
