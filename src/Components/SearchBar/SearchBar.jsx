@@ -1,6 +1,8 @@
 import React from 'react';
 import './SearchBar.css'; // Import your CSS file
 import ActionIcon from './ActionIcon';
+import ProfileIcon from '../Assets/ProfileIcon.png';
+import logo from "../Assets/WhiteLogo.png";
 
 const SearchBar = () => {
     return (
@@ -34,10 +36,11 @@ const SearchBar = () => {
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/7584165f4d9ac92852f49a792ac45590118d4c019b0d1da91b7711ac9e5e46f3?placeholderIfAbsent=true&apiKey=d7229136ad094bbf8efa03382e544f03"
                 alt="Settings"
             />
-            <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/acdba9d2788ff30c9e1cc85a62d3736517f3201bfeeaec82f83d06028ed9052d?placeholderIfAbsent=true&apiKey=d7229136ad094bbf8efa03382e544f03"
-                alt="User profile"
-                className="profileIcon"
+            <ActionIcon
+                src={ProfileIcon} // Use the imported ProfileIcon image
+                alt="Profile Icon"
+                medium
+                className="profileIcon" // Add your class for styling
             />
         </nav>
     );

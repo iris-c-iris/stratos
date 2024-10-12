@@ -58,8 +58,9 @@
     aspect-ratio: 1;
     object-fit: contain;
     object-position: center;
-    width: 41px;
+    width: auto;
     align-self: stretch;
+    margin: auto 0;
 }
 
 .visually-hidden {
