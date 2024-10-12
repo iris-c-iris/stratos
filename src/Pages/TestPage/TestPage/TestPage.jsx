@@ -12,7 +12,7 @@ const TestPage = () => {
             <div className='sidebar-container'>
                 <SideBarEmployee />
             </div>
-            <div className='content-container'>
+            <div className='test-content-container'>
                 <ActionIcon />
                 <Header />
                 <div className='upload-container'>

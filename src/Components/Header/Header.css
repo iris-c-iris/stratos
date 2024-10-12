@@ -14,10 +14,11 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow for visual separation */
 }
 
-.header img {
-    max-width: 50px;
-    max-height: 50px;
-    margin-right: 15px; /* Space between the logo and text */
+.header-logo {
+    max-height: 50px; /* Adjust this value based on your header height */
+    height: auto; /* Maintain aspect ratio */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add some space between the logo and the title */
 }
 
 .header-content {
@@ -26,15 +27,9 @@
     flex-grow: 1; /* Allow it to grow and shrink */
     white-space: nowrap; /* Prevent text from wrapping */
     overflow: hidden; /* Prevent overflowing text */
-    max-width: 60%; /* Limit width to prevent stretching */
+    width: 100%; /* Make it take the full width */
 }
 
-.header h1 {
-    margin: 0;
-    font-size: clamp(1rem, 2vw, 1.5rem); /* Responsive font size */
-    font-weight: normal; /* Set font weight to normal to make it not bold */
-    font-family: 'DM Sans', -apple-system, Roboto, Helvetica, sans-serif;
-}
 
 .search-bar-container {
     flex-grow: 0; /* Prevent the search bar from growing */
