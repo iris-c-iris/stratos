@@ -8,7 +8,7 @@ const sideBarItems = [
         isActive: true,
     },
     {
-        icon: "https://www.flaticon.com/free-icon-font/folder-plus-circle_16769492",
+        icon: "https://cdn-icons-png.flaticon.com/512/1828/1828817.png",
         text: "Add Inventory",
     },
     {

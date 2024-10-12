@@ -8,7 +8,7 @@ function Header() {
         <header className="header">
             <div className="header-content">
                 <img src={logo} alt="Logo" />
-                <h1>Stratos Warehouse Management</h1>
+                <h1>Stratos WMS</h1>
             </div>
             <div className="search-bar-container">
                 <SearchBar />

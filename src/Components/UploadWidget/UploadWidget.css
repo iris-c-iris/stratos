@@ -1,5 +1,5 @@
 .container {
-    max-width: 617px; /* Only keep the desired max-width */
+    max-width: 617px;
     border-radius: 20px;
     background-color: rgba(17, 28, 68, 1);
     overflow: hidden;
@@ -30,7 +30,7 @@
     display: flex;
     flex-direction: column;
     line-height: normal;
-    width: 50%;
+    width: auto;
     margin-left: 0px;
 }
 
@@ -87,65 +87,7 @@
     margin-top: 7px;
 }
 
-.profileInfo {
-    display: flex;
-    flex-direction: column;
-    align-self: stretch;
-    font-family: DM Sans, sans-serif;
-    color: #fff;
-    margin: auto 0;
-}
 
-@media (max-width: 991px) {
-    .profileInfo {
-        margin-top: 40px;
-    }
-}
-
-.profileTitle {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1;
-    letter-spacing: -0.48px;
-}
-
-.profileDescription {
-    color: var(--Secondary-Grey-600, #a3aed0);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: -0.32px;
-    margin-top: 7px;
-}
-
-@media (max-width: 991px) {
-    .profileDescription {
-        margin-right: 2px;
-    }
-}
-
-.publishButton {
-    border-radius: 16px;
-    background: var(--Primary-Purple-Blue-400, #7551ff);
-    align-self: start;
-    margin-top: 82px;
-    font-size: 14px;
-    font-weight: 500;
-    text-align: center;
-    letter-spacing: -0.28px;
-    line-height: 24px;
-    padding: 11px 32px;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-}
-
-@media (max-width: 991px) {
-    .publishButton {
-        margin-top: 40px;
-        padding: 11px 20px;
-    }
-}
 
 .visually-hidden {
     position: absolute;

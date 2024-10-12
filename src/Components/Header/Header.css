@@ -33,6 +33,7 @@
     margin: 0;
     font-size: clamp(1rem, 2vw, 1.5rem); /* Responsive font size */
     font-weight: normal; /* Set font weight to normal to make it not bold */
+    font-family: 'DM Sans', -apple-system, Roboto, Helvetica, sans-serif;
 }
 
 .search-bar-container {

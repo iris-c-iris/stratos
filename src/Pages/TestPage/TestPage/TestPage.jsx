@@ -8,13 +8,16 @@ import SearchBar from "../../../Components/SearchBar/SearchBar";
 import ActionIcon from "../../../Components/SearchBar/ActionIcon";
 import Header from "../../../Components/Header/Header";
 import SideBarEmployee from "../../../Components/SideBarEmployee/SideBarEmployee";
+import UploadWidget from "../../../Components/UploadWidget/UploadWidget";
 
 const TestPage = () => {
     return (
         <div className='test-page'>
             <SideBarEmployee/>
-            <ActionIcon />
-            <Header />
+            <ActionIcon/>
+            <Header/>
+            <UploadWidget/>
+
 
         </div>
     );
