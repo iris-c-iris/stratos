@@ -17,16 +17,18 @@ const SideBarItem = ({ icon, text, isActive }) => (
 
 const SideBarEmployee = () => (
     <nav className="SideBar">
-        <img
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/1d3b1592bb00c609f93f01f9f2c7da1648ee0c7d73392debee4358cc7483e75f?placeholderIfAbsent=true&apiKey=d7229136ad094bbf8efa03382e544f03"
-            alt="Logo"
-            className="logo"
-        />
-        <div className="menuItems">
-            {sideBarItems.map((item, index) => (
-                <SideBarItem key={index} {...item} />
-            ))}
-        </div>
+        <div className="sideBarContent"> {/* Add the sideBarContent class */}
+            <img
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/1d3b1592bb00c609f93f01f9f2c7da1648ee0c7d73392debee4358cc7483e75f?placeholderIfAbsent=true&apiKey=d7229136ad094bbf8efa03382e544f03"
+                alt="Logo"
+                className="logo"
+            />
+            <div className="menuItems">
+                {sideBarItems.map((item, index) => (
+                    <SideBarItem key={index} {...item} />
+                ))}
+            </div>
+        </div> {/* Close the sideBarContent div */}
     </nav>
 );
 

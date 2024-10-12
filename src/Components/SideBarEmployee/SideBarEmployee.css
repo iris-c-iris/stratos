@@ -1,8 +1,8 @@
 .SideBar {
     position: fixed;
     left: 0;
-    top: 20px; /* Further adjustment to give more space */
-    height: calc(100vh - 20px); /* Adjust height accordingly */
+    top: 0; /* Align it with the top */
+    height: 100vh; /* Full height */
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -14,15 +14,15 @@
     font-family: 'DM Sans', -apple-system, Roboto, Helvetica, sans-serif;
     width: 290px; /* Initial width */
     transition: width 0.3s;
-    padding-top: 90px; /* Adjust top padding to bring content down */
+    background-color: #111c44; /* Unified background color */
 }
 
 .sideBarContent {
-    background-color: #111c44;
+    background-color: inherit;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    padding: 20px 0 20px;
+    padding: 0; /* Ensure no padding */
     flex-grow: 1;
 }
 
@@ -31,6 +31,8 @@
     max-height: 60px;
     object-fit: contain;
     object-position: center;
+    margin: 0; /* Ensure no margin */
+    padding: 20px 0; /* Padding to maintain spacing */
 }
 
 .menuItems {
@@ -38,7 +40,8 @@
     flex-direction: column;
     align-items: flex-start;
     padding-left: 31px;
-    margin: 20px 0;
+    padding-top: 110px; /* Additional padding to ensure it's below the header */
+    margin: 0;
     flex-grow: 1;
     overflow-y: auto;
 }
@@ -47,9 +50,11 @@
     display: flex;
     width: 100%;
     gap: 12px;
-    margin-top: 20px;
+    padding: 10px 0; /* Ensure padding for better spacing */
     white-space: nowrap;
     align-items: center;
+    border: none;
+    box-shadow: none;
 }
 
 .icon {
