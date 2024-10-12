@@ -1,6 +1,9 @@
-.SideBarEmployee {
+.SideBar {
+    position: fixed;
+    left: 0;
+    top: 20px; /* Further adjustment to give more space */
+    height: calc(100vh - 20px); /* Adjust height accordingly */
     display: flex;
-    max-width: 290px; /* Keep a max width for larger screens */
     flex-direction: column;
     overflow: hidden;
     color: #fff;
@@ -9,7 +12,9 @@
     font-weight: 500;
     font-size: 16px;
     font-family: 'DM Sans', -apple-system, Roboto, Helvetica, sans-serif;
-    height: 100vh; /* Full height of the viewport */
+    width: 290px; /* Initial width */
+    transition: width 0.3s;
+    padding-top: 90px; /* Adjust top padding to bring content down */
 }
 
 .sideBarContent {
@@ -17,13 +22,13 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    padding: 130px 0 20px; /* Adjust bottom padding for smaller screens */
-    flex-grow: 1; /* Allow it to take available vertical space */
+    padding: 20px 0 20px;
+    flex-grow: 1;
 }
 
 .logo {
     width: 100%;
-    max-height: 60px; /* Maintain a maximum height for logos */
+    max-height: 60px;
     object-fit: contain;
     object-position: center;
 }
@@ -33,26 +38,26 @@
     flex-direction: column;
     align-items: flex-start;
     padding-left: 31px;
-    margin: 20px 0; /* Adjust margin for better spacing */
-    flex-grow: 1; /* Allow items to grow */
-    overflow-y: auto; /* Enable scrolling if content overflows */
+    margin: 20px 0;
+    flex-grow: 1;
+    overflow-y: auto;
 }
 
 .SideBarItem {
     display: flex;
     width: 100%;
     gap: 12px;
-    margin-top: 20px; /* Reduce top margin for compactness */
-    white-space: nowrap; /* Prevent wrapping */
+    margin-top: 20px;
+    white-space: nowrap;
     align-items: center;
 }
 
 .icon {
-    aspect-ratio: 1; /* Maintain aspect ratio */
-    object-fit: contain; /* Ensure icon fits within box */
+    aspect-ratio: 1;
+    object-fit: contain;
     object-position: center;
-    width: 24px; /* Fixed width for icons */
-    margin: auto 0; /* Center vertically */
+    width: 24px;
+    margin: auto 0;
 }
 
 .activeIndicator {
@@ -60,7 +65,7 @@
     background-color: #0000ff;
     width: 4px;
     height: 36px;
-    margin-left: auto; /* Align to the right */
+    margin-left: auto;
 }
 
 .active {
@@ -69,20 +74,23 @@
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
-    .SideBarEmployee {
-        max-width: 200px; /* Reduce max width for smaller screens */
-        padding: 10px; /* Adjust padding for compactness */
+    .SideBar {
+        width: 200px;
     }
-
-    .sideBarContent {
-        padding: 80px 0 20px; /* Adjust padding for smaller screens */
-    }
-
     .menuItems {
-        padding-left: 15px; /* Reduce padding on smaller screens */
+        padding-left: 15px;
     }
-
     .SideBarItem {
-        margin-top: 15px; /* Adjust spacing for smaller screens */
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .SideBar {
+        width: 100px;
+    }
+    .logo {
+        display: block;
+        margin: 0 auto;
     }
 }
