@@ -6,7 +6,7 @@ html, body {
 body {
     background-color: #0b0b0b; /* Set the background color for the entire page */
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 
@@ -20,7 +20,7 @@ body {
 .test-content-container {
     display: flex;
     flex-direction: column;
-    margin-left: 290px; /* Align content directly next to sidebar */
+    margin-left: 250px; /* Align content directly next to sidebar */
     padding-right: 10px;
     padding-top: 70px; /* Ensure content is below the header */
     width: 100%;
