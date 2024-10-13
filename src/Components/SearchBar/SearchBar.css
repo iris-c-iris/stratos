@@ -1,67 +1,40 @@
 .searchContainer {
-    border-radius: 30px;
-    background-color: rgb(0, 0, 0);
+    border-radius: 24px;
+    background-color: rgba(242, 242, 242, 1);
     display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-    padding: 10px 0px;
-    width: 100%; /* Full width for responsiveness */
-    max-width: 422px; /* Keep a max width for larger screens */
-    height: auto; /* Ensure it doesn't stretch vertically */
-    max-height: 60px; /* Set a maximum height to prevent it from growing */
-    color: rgba(255, 255, 255, 1);
-    white-space: nowrap;
-    letter-spacing: -0.28px;
-    font: 400 14px/1 DM Sans, sans-serif;
+    align-items: center;
+    padding: 8px 16px;
+    width: 100%;
+    max-width: 300px;
+    transition: max-width 0.3s ease-in-out;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.searchContainer.expanded {
+    max-width: 600px; /* Ensure the search bar expands */
 }
 
 .searchInputWrapper {
-    border-radius: 49px;
-    background-color: rgb(255, 255, 255);
     display: flex;
-    gap: 11px;
-    padding: 11px 20px;
-    flex-grow: 1; /* Allow the input wrapper to grow */
-    max-width: 100%; /* Ensure it doesn't exceed container width */
+    align-items: center;
+    flex-grow: 1;
 }
 
 .searchIcon {
-    aspect-ratio: 1;
-    object-fit: contain;
-    object-position: center;
-    width: 20px; /* Increase size for better visibility */
-    margin: auto 0;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
 }
+
 
 .searchInput {
-    background: transparent;
     border: none;
-    color: inherit;
-    font: inherit;
+    background: none;
     outline: none;
-    width: 100%; /* Full width for the input */
-}
-
-.actionIcon {
-    aspect-ratio: 1;
-    object-fit: contain;
-    object-position: center;
-    width: 24px; /* Fixed width for action icons */
-    align-self: stretch;
-    margin: auto 0;
-}
-
-.smallActionIcon {
-    width: 18px; /* Ensure this remains small */
-}
-
-.profileIcon {
-    aspect-ratio: 1;
-    object-fit: contain;
-    object-position: center;
-    width: auto; /* Auto width for profile icon */
-    align-self: stretch;
-    margin: auto 0;
+    flex-grow: 1;
+    color: #333;
+    font-size: 16px;
 }
 
 .visually-hidden-search {
@@ -76,23 +49,18 @@
     border: 0;
 }
 
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
+.smallActionIcon {
+    width: 18px;
+}
+
+.actionIcons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+@media (max-width: 600px) {
     .searchContainer {
-        padding: 8px; /* Reduce padding for smaller screens */
-        gap: 10px; /* Adjust gap */
-        max-width: 90%; /* Allow more space for the search bar */
-    }
-
-    .searchInputWrapper {
-        padding: 8px; /* Adjust padding */
-    }
-
-    .searchIcon {
-        width: 16px; /* Smaller icon size for mobile */
-    }
-
-    .actionIcon {
-        width: 20px; /* Adjust action icon size */
+        max-width: 90%;
     }
 }
