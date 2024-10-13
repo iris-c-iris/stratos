@@ -1,8 +1,8 @@
 .SideBar {
     position: fixed;
     left: 0;
-    top: 0; /* Align it with the top */
-    height: 100vh; /* Full height */
+    top: 0;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -12,10 +12,12 @@
     font-weight: 500;
     font-size: 16px;
     font-family: 'DM Sans', -apple-system, Roboto, Helvetica, sans-serif;
-    width: 290px; /* Initial width */
+    width: 290px;
     transition: width 0.3s;
-    background-color: #111c44; /* Unified background color */
+    background-color: #111c44;
 }
+
+
 
 .sideBarContent {
     background-color: inherit;

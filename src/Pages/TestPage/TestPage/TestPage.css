@@ -5,16 +5,16 @@
 .test-content-container {
     display: flex;
     flex-direction: column;
-    margin-left: 0; /* Align content directly next to sidebar */
-    padding-right: 300px;
-    padding-top: 10px;
+    margin-left: 290px; /* Align content directly next to sidebar */
+    padding-right: 10px;
+    padding-top: 70px; /* Ensure content is below the header */
 }
 
-
 .widget-container {
-    display: inline-flex;
-    flex-wrap: nowrap;
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
+    justify-content: flex-start;
 }
 
 .upload-container,
@@ -24,15 +24,17 @@
 }
 
 .complex-table-container {
-    padding-top: 0;
+    padding-top: 20px;
 }
 
 @media (max-width: 991px) {
     .test-content-container {
-        padding-left: 0px;
+        margin-left: 0; /* Remove margin for smaller screens */
+        padding-top: 70px; /* Ensure content is still below the header */
     }
 
     .widget-container {
         flex-direction: column;
+        align-items: flex-start;
     }
 }

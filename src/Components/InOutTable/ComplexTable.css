@@ -1,16 +1,12 @@
-/* ComplexTable CSS */
 .complexTable {
     border-radius: 20px;
     background-color: rgba(17, 28, 68, 1);
     display: flex;
-    max-width: 774px;
+    width: auto;
     flex-direction: column;
     overflow: hidden;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 21px 50px 21px 17px;
     margin-top: 20px;
 }
 

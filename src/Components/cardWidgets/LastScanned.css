@@ -1,4 +1,4 @@
-.taskCounter {
+.card {
     border-radius: 20px;
     background-color: rgba(17, 28, 68, 1);
     display: flex;
@@ -6,7 +6,6 @@
     min-width: auto;
     gap: 18px;
     overflow: hidden;
-    font-weight: 700;
     flex-grow: 1;
     width: auto;
     height: auto;
@@ -14,7 +13,7 @@
     position: relative; /* Enable absolute positioning within the container */
 }
 
-.taskIcon {
+.scanned_icon {
     aspect-ratio: 1;
     object-fit: contain;
     object-position: center;
@@ -25,48 +24,60 @@
     transform: translateX(-50%); /* Center the icon */
 }
 
-.taskInfo {
+.content {
     align-self: start;
     display: flex;
-    margin-top: 4px;
     flex-direction: column;
     align-items: center; /* Center text horizontally */
 }
 
-.taskLabel {
+.label {
     color: rgba(163, 174, 208, 1);
     font-size: 16px;
     line-height: 2;
     letter-spacing: -0.32px;
 }
 
-.taskCount {
+.value {
     color: rgba(255, 255, 255, 1);
     font-size: 18px;
     line-height: 2;
     letter-spacing: -0.36px;
     align-self: center;
     margin-top: 11px;
+    font-weight: 700;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 @media (max-width: 991px) {
-    .taskCounter {
-        padding-right: 10px;
+    .card {
+        padding-right: 20px;
         flex-direction: row; /* Stack items horizontally */
         align-items: center; /* Center items vertically */
     }
 
-    .taskIcon {
+    .scanned_icon {
         position: static; /* Default positioning within flex container */
         transform: none; /* Remove centering transform */
         margin-right: 10px; /* Space between icon and text */
     }
 
-    .taskInfo {
-        align-items: center; /* Align text to the left */
+    .content {
+        align-items: flex-start; /* Align text to the left */
     }
 
-    .taskCount {
-        align-self: center;
+    .value {
+        align-self: flex-start;
     }
 }

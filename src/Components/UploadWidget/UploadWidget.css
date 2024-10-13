@@ -1,5 +1,6 @@
 .uploadContainer {
-    max-width: 617px;
+    width: auto;
+    height: auto;
     border-radius: 20px;
     background-color: rgba(17, 28, 68, 1);
     overflow: hidden;
@@ -8,7 +9,7 @@
 
 @media (max-width: 991px) {
     .uploadContainer {
-        padding: 0 20px;
+        padding: 27px 20px; /* Ensure the top and bottom padding stays consistent */
     }
 }
 
@@ -49,14 +50,14 @@
     font-family: DM Sans, sans-serif;
     text-align: center;
     width: 100%;
-    padding: 55px 42px;
+    padding: 55px 55px;
     border: 1px dashed rgba(255, 255, 255, 0.1);
 }
 
 @media (max-width: 991px) {
     .uploadArea {
         margin-top: 40px;
-        padding: 0 20px;
+        padding: 27px 20px; /* Ensure the top and bottom padding stays consistent */
     }
 }
 
