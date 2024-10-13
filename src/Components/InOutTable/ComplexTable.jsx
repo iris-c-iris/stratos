@@ -1,12 +1,15 @@
 import React from 'react';
-import './ComplexTable.css'; // Import your external CSS file
+import './ComplexTable.css';
+import complete from '../Assets/complete.png';
+import delayed from '../Assets/delayed.png';
+import canceled from '../Assets/canceled.png';
 
 const ComplexTable = () => {
     const tableData = [
         {
             name: 'BMR Suspension',
             status: {
-                icon: 'https://cdn.builder.io/api/v1/image/assets/TEMP/e76cc6995c13180eeda30a71572187406a23d49be477beb26210a166d7599da4?placeholderIfAbsent=true&apiKey=d7229136ad094bbf8efa03382e544f03',
+                icon: complete,
                 text: 'Completed'
             },
             date: '18 Oct 2024',
@@ -15,25 +18,25 @@ const ComplexTable = () => {
         {
             name: 'Nitrous Express',
             status: {
-                icon: 'https://cdn.builder.io/api/v1/image/assets/TEMP/f60d7eabf7dbe8dff73942ad40f1c23930279a0680e23fa15ee2717635c095a4?placeholderIfAbsent=true&apiKey=d7229136ad094bbf8efa03382e544f03',
+                icon: canceled,
                 text: 'Canceled'
             },
             date: '18 Oct 2024',
             progress: 0
         },
         {
-            name: 'Whiteline Performance',
+            name: 'Whiteline',
             status: {
-                icon: 'https://cdn.builder.io/api/v1/image/assets/TEMP/ee39686d29a32db9681e7273c4db313c97067e139ce38411f93fd6adfe460464?placeholderIfAbsent=true&apiKey=d7229136ad094bbf8efa03382e544f03',
+                icon: delayed,
                 text: 'Delayed'
             },
             date: '18 Oct 2024',
             progress: 40
         },
         {
-            name: 'JEGS High Performance',
+            name: 'JEGS',
             status: {
-                icon: 'https://cdn.builder.io/api/v1/image/assets/TEMP/1744cbd090dc4fe27f862e252b3e84a3ee9a32553b9c12794d7300e59217c567?placeholderIfAbsent=true&apiKey=d7229136ad094bbf8efa03382e544f03',
+                icon: complete,
                 text: 'Completed'
             },
             date: '18 Oct 2024',

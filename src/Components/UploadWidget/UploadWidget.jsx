@@ -1,5 +1,7 @@
 import React from "react";
 import './UploadWidget.css'; // Import your external CSS file
+import plus from '../Assets/plus.png';
+
 
 function UploadWidget() {
     return (
@@ -7,15 +9,10 @@ function UploadWidget() {
             <div className="content">
                 <div className="column">
                     <div className="uploadArea">
-                        <img
-                            loading="lazy"
-                            src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png"
-                            className="uploadIcon"
-                            alt="Upload icon"
-                        />
+                        <img src={plus} alt="Upload Icon" className="uploadIcon"/>
                         <h2 className="uploadTitle">Add Inventory</h2>
                         <p className="uploadDescription">
-                            Manual Inventory Input
+                            Manually Add Inventory
                         </p>
                     </div>
                 </div>
