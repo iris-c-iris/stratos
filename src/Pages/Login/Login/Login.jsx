@@ -9,15 +9,11 @@ import { Link } from 'react-router-dom';
 import Header from '../../../Components/Header/Header';
 
 const Login = () => {
-    // Set initial state to 'Employee'
     const [selectedRole, setSelectedRole] = useState('Employee');
-    
-    // Additional state for employee number
     const [employeeNumber, setEmployeeNumber] = useState("");
     const [loginEmail, setLoginEmail] = useState("");
     const [loginPassword, setLoginPassword] = useState("");
 
-    // Handler to set the selected role
     const handleRoleSelect = (role) => {
         setSelectedRole(role);
     };
@@ -34,94 +30,89 @@ const Login = () => {
                 console.log("Error logging in as Manager:", error.message);
             }
         } else {
-            // Handle Employee login here
             console.log("Employee Number entered:", employeeNumber);
-            // Add any specific logic for employee authentication
         }
     };
 
     return (
-        <div className='wrapper'>
-            <form action="">
-                <img src={logo} alt="Logo"/>
-                <h1>Login</h1>
+            <div className='wrapper'>
+                <form action="">
+                    <img src={logo} alt="Logo"/>
+                    <h1>Login</h1>
 
-                {/* Employee and Manager selection buttons */}
-                <div className="role-selection">
-                    <button
-                        type="button"
-                        className={selectedRole === 'Employee' ? 'active' : ''}
-                        onClick={() => handleRoleSelect('Employee')}
-                    >
-                        Employee
-                    </button>
-                    <button
-                        type="button"
-                        className={selectedRole === 'Manager' ? 'active' : ''}
-                        onClick={() => handleRoleSelect('Manager')}
-                    >
-                        Manager
-                    </button>
-                </div>
-
-                {/* Conditionally render input fields based on selected role */}
-                {selectedRole === 'Employee' && (
-                    <div className="input-box">
-                        <input 
-                            type="text" 
-                            placeholder="Employee Number" 
-                            required 
-                            onChange={(event) => setEmployeeNumber(event.target.value)} 
-                        />
-                        <FaUser className='icon' />
+                    <div className="role-selection">
+                        <button
+                            type="button"
+                            className={selectedRole === 'Employee' ? 'active' : ''}
+                            onClick={() => handleRoleSelect('Employee')}
+                        >
+                            Employee
+                        </button>
+                        <button
+                            type="button"
+                            className={selectedRole === 'Manager' ? 'active' : ''}
+                            onClick={() => handleRoleSelect('Manager')}
+                        >
+                            Manager
+                        </button>
                     </div>
-                )}
 
-                {selectedRole === 'Manager' && (
-                    <>
+                    {selectedRole === 'Employee' && (
                         <div className="input-box">
                             <input 
                                 type="text" 
-                                placeholder="Email" 
+                                placeholder="Employee Number" 
                                 required 
-                                onChange={(event) => setLoginEmail(event.target.value)} 
+                                onChange={(event) => setEmployeeNumber(event.target.value)} 
                             />
                             <FaUser className='icon' />
                         </div>
-                        <div className="input-box">
-                            <input 
-                                type="password" 
-                                placeholder="Password" 
-                                required 
-                                onChange={(event) => setLoginPassword(event.target.value)} 
-                            />
-                            <FaLock className='icon' />
-                        </div>
-                    </>
-                )}
+                    )}
 
-                <div className="remember-forgot">
                     {selectedRole === 'Manager' && (
                         <>
-                            <label><input type="checkbox" />Remember me</label>
-                            <a href="#">Forgot password?</a>
+                            <div className="input-box">
+                                <input 
+                                    type="text" 
+                                    placeholder="Email" 
+                                    required 
+                                    onChange={(event) => setLoginEmail(event.target.value)} 
+                                />
+                                <FaUser className='icon' />
+                            </div>
+                            <div className="input-box">
+                                <input 
+                                    type="password" 
+                                    placeholder="Password" 
+                                    required 
+                                    onChange={(event) => setLoginPassword(event.target.value)} 
+                                />
+                                <FaLock className='icon' />
+                            </div>
                         </>
                     )}
-                </div>
 
-                <button type="submit" onClick={handleLoginClick}>Login</button>
-
-                 {/* Conditionally render the register link based on role */}
-                 {selectedRole === 'Manager' && (
-                    <div className="register-link">
-                        <p> Don't have an account? <Link to="/Signup">Register</Link></p>
+                    <div className="remember-forgot">
+                        {selectedRole === 'Manager' && (
+                            <>
+                                <label><input type="checkbox" />Remember me</label>
+                                <a href="#">Forgot password?</a>
+                            </>
+                        )}
                     </div>
-                )}
-            </form>
-        </div>     
-        
+
+                    <button type="submit" onClick={handleLoginClick}>Login</button>
+
+                    {selectedRole === 'Manager' && (
+                        <div className="register-link">
+                            <p> Don't have an account? <Link to="/Signup">Register</Link></p>
+                        </div>
+                    )}
+                </form>
+            </div>
     );
 };
 
 export default Login;
+
 

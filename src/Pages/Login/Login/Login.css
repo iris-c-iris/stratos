@@ -1,12 +1,4 @@
-/* Set the background image for the body */
-body {
-    background-image: url(../../../../public/Logos/Stratos\ Login-Signup\ background.png); /* Replace with the path to your image */
-    background-size: cover; /* Ensure the image covers the entire background */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    height: 100vh; /* Ensure the body takes full viewport height */
-    margin: 0; /* Remove default margin */
-}
+
 .wrapper {
     width: 420px;
     background: rgb(255, 255, 255);
