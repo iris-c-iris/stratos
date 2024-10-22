@@ -14,7 +14,8 @@
     font-family: 'DM Sans', -apple-system, Roboto, Helvetica, sans-serif;
     width: 230px;
     transition: width 0.3s;
-    background-color: #000000;
+    background-color: #FFF2EDFF;
+    box-shadow: 0 0 10px;
 }
 
 
