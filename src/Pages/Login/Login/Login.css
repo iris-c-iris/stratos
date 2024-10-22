@@ -8,6 +8,7 @@
     color: #000000;
 }
 
+
 .wrapper h1 {
     font-size: 36px;
     text-align: center;
@@ -66,7 +67,7 @@
     text-decoration: underline;
 }
 
-.wrapper button {
+.wrapper button[type="submit"] {
     width: 100%;
     height: 45px;
     background: blue;
@@ -102,4 +103,39 @@
     margin-right: auto;
     max-width: 25%;
     max-height: 25%;
+}
+
+/* New styles for Employee and Manager selection buttons */
+/* Role selection container */
+.role-selection {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+/* Default state: white background and black text */
+.role-selection button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: white !important;
+    color: black !important;
+    border: 2px solid #060606;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    width: 45%;
+}
+
+/* Hover state: green background and black text */
+.role-selection button:hover {
+    background-color:lightgray !important; 
+    color: black !important; /* Black text */
+}
+
+/* Selected state: blue background and white text */
+.role-selection button.active {
+    background-color: blue !important; 
+    color: white !important; /* White text */
+    border-color: blue !important; 
 }
