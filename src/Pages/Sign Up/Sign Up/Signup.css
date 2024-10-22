@@ -6,10 +6,14 @@
     border-radius: 10px;
     padding: 30px 40px;
     color: #000000;
-    position: absolute;
-    left: 0;
-    top: 50px; /* Adjust this value to move the box lower or higher from the top */
-    transform: translateX(50%); /* Keeps the box centered horizontally on the left */
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
