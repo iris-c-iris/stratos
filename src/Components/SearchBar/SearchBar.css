@@ -1,13 +1,13 @@
 .searchContainer {
     border-radius: 24px;
-    background-color: rgba(242, 242, 242, 1);
+    background-color: black; /* Changed from light to dark */
     display: flex;
     align-items: center;
     padding: 8px 16px;
     width: 100%;
     max-width: 300px;
     transition: max-width 0.3s ease-in-out;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 6px rgba(255, 255, 255, 0.1); /* Updated shadow to work on dark background */
 }
 
 .searchContainer.expanded {
@@ -24,16 +24,15 @@
     width: 20px;
     height: 20px;
     margin-right: 8px;
-    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%); /* Changed from white to black */
 }
-
 
 .searchInput {
     border: none;
     background: none;
     outline: none;
     flex-grow: 1;
-    color: #333;
+    color: white; /* Changed from black to white */
     font-size: 16px;
 }
 
