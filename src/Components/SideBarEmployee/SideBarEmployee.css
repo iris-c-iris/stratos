@@ -1,105 +1,95 @@
-.SideBar {
+/* Static Sidebar Styling */
+.static-sidebar {
     position: fixed;
     left: 0;
     top: 0;
     height: 100vh;
+    width: 290px;
+    background-color: #fff;
+    border-radius: 0 0 20px 0;
+    padding: 56px 0 25px;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-    color: #000; /* Changed from white to black */
-    letter-spacing: -0.32px;
-    line-height: 30px;
-    font-weight: 500;
-    font-size: 16px;
-    font-family: 'DM Sans', -apple-system, Roboto, Helvetica, sans-serif;
-    width: 230px;
-    transition: width 0.3s;
-    background-color: #000; /* Changed from white to black */
-    box-shadow: 0 0 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
 }
 
-.sideBarContent {
-    background-color: inherit;
+/* Old Functional Sidebar */
+.sidebar {
+    width: 290px;
+    background-color: transparent;
+    border-radius: 0 0 20px 0;
+    padding: 56px 0 25px;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-    padding: 0; /* Ensure no padding */
-    flex-grow: 1;
+    box-shadow: none;
 }
 
 .logo {
+    color: #2b3674;
+    font: 700 26px/1 Poppins, sans-serif;
+    text-align: center;
+}
+
+.logoLight {
+    font-weight: 400;
+}
+
+.decorativeImage {
     width: 100%;
-    max-height: 60px;
-    object-fit: contain;
-    object-position: center;
-    margin: 0; /* Ensure no margin */
-    padding: 20px 0; /* Padding to maintain spacing */
+    margin-top: 48px;
+}
+
+.navigation {
+    margin-top: 38px;
+    padding-left: 31px;
 }
 
 .menuItems {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 31px;
-    padding-top: 110px; /* Additional padding to ensure it's below the header */
-    margin: 0;
     flex-grow: 1;
     overflow-y: auto;
 }
 
-.SideBarItem {
+.sideBarItem {
     display: flex;
-    width: 100%;
-    gap: 12px;
-    padding: 10px 0; /* Ensure padding for better spacing */
-    white-space: nowrap;
     align-items: center;
-    border: none;
-    box-shadow: none;
-    color: #fff; /* Changed from black to white */
+    gap: 12px;
+    padding: 10px 20px;
+    position: relative;
+    width: 100%;
 }
 
 .icon {
-    aspect-ratio: 1;
-    object-fit: contain;
-    object-position: center;
     width: 24px;
-    margin: auto 0;
-    filter: invert(1); /* This will make white icons black */
-}
-
-.activeIndicator {
-    border-radius: 25px;
-    background-color: #fff; /* Changed from blue to white */
-    width: 4px;
-    height: 36px;
-    margin-left: auto;
+    height: 24px;
 }
 
 .active {
+    background-color: #e0e7ff;
+    border-radius: 4px;
     font-weight: 700;
-    color: #fff; /* Ensure active items are white */
+    width: 100%;
+    position: relative;
 }
 
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-    .SideBar {
-        width: 200px;
-    }
-    .menuItems {
-        padding-left: 15px;
-    }
-    .SideBarItem {
-        margin-top: 15px;
-    }
+.active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #0000ff;
+    border-radius: 4px;
+    z-index: -1;
 }
 
-@media (max-width: 500px) {
-    .SideBar {
-        width: 100px;
-    }
-    .logo {
-        display: block;
-        margin: 0 auto;
+@media (max-width: 991px) {
+    .sidebar {
+        width: 100%;
+        border-radius: 0;
     }
 }

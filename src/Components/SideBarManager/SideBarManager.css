@@ -1,64 +1,100 @@
-.SideBar {
+/* Static Sidebar Styling */
+.static-sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 290px;
+    background-color: #fff;
+    border-radius: 0 0 20px 0;
+    padding: 56px 0 25px;
     display: flex;
-    max-width: 290px;
     flex-direction: column;
-    overflow: hidden;
-    color: #fff;
-    letter-spacing: -0.32px;
-    line-height: 30px;
-    font-weight: 500;
-    font-size: 16px;
-    font-family: 'DM Sans', -apple-system, Roboto, Helvetica, sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
 }
 
-.sideBarContent {
-    background-color: #111c44;
+/* Old Functional Sidebar */
+.sidebar {
+    width: 290px;
+    background-color: transparent;
+    border-radius: 0 0 20px 0;
+    padding: 56px 0 25px;
     display: flex;
-    width: 100%;
     flex-direction: column;
-    overflow: hidden;
-    padding: 130px 0 671px;
+    box-shadow: none;
 }
 
 .logo {
+    color: #2b3674;
+    font: 700 26px/1 Poppins, sans-serif;
+    text-align: center;
+}
+
+.logoLight {
+    font-weight: 400;
+}
+
+.decorativeImage {
     width: 100%;
-    object-fit: contain;
-    object-position: center;
+    margin-top: 48px;
+}
+
+.navigation {
+    margin-top: 38px;
+    padding-left: 31px;
 }
 
 .menuItems {
     display: flex;
-    width: 100%;
-    padding-left: 31px;
     flex-direction: column;
     align-items: flex-start;
-    margin: 38px 0; /* Remove negative margin unless necessary */
+    flex-grow: 1;
+    overflow-y: auto;
 }
 
-.SideBarItem {
+.sideBarItem {
     display: flex;
-    width: 100%;
+    align-items: center;
     gap: 12px;
-    margin-top: 26px;
-    white-space: nowrap;
+    padding: 10px 20px;
+    position: relative;
+    width: 100%;
+    transition: background-color 0.1s; /* Reduced transition duration for faster color change */
+}
+
+.sideBarItem:hover {
+    background-color: #9ca8ff; /* Change background color on hover */
 }
 
 .icon {
-    aspect-ratio: 1;
-    object-fit: contain;
-    object-position: center;
     width: 24px;
-    margin: auto 0;
-}
-
-.activeIndicator {
-    border-radius: 25px;
-    background-color: #7551ff;
-    width: 4px;
-    height: 36px;
-    margin-left: auto;
+    height: 24px;
 }
 
 .active {
+    background-color: #0000ff;
+    border-radius: 4px;
     font-weight: 700;
+    width: 100%;
+    position: relative;
+}
+
+.active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #0000ff;
+    border-radius: 4px;
+    z-index: -1;
+}
+
+@media (max-width: 991px) {
+    .sidebar {
+        width: 100%;
+        border-radius: 0;
+    }
 }

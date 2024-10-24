@@ -1,0 +1,43 @@
+.cashbackContainer {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.imageBackground {
+    height: 211px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 13px;
+}
+
+.brandName {
+    color: #2b3674;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.offerDetails {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.offerIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.offerText {
+    color: #a3aed0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media (max-width: 991px) {
+    .cashbackContainer {
+        padding: 15px;
+    }
+}

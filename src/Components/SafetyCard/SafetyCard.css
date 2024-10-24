@@ -1,0 +1,52 @@
+.safetyContainer {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 26px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.safetyIcon {
+    width: 91px;
+    height: 91px;
+    margin-bottom: 17px;
+}
+
+.safetyTitle {
+    color: #2b3674;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.33;
+    margin-bottom: 17px;
+}
+
+.safetyDescription {
+    color: #a3aed0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2;
+    margin-bottom: 45px;
+}
+
+.safetyButton {
+    background-color: #4318ff;
+    color: #fff;
+    border: none;
+    border-radius: 16px;
+    padding: 11px 31px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    align-self: stretch;
+}
+
+@media (max-width: 991px) {
+    .safetyContainer {
+        padding: 20px;
+    }
+
+    .safetyButton {
+        align-self: center;
+    }
+}

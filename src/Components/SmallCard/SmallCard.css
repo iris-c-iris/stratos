@@ -1,0 +1,50 @@
+.card {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.cardIcon {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+}
+
+.cardContent {
+    flex: 1;
+}
+
+.cardTitle {
+    color: #a3aed0;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.cardValue {
+    color: #2b3674;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.48px;
+}
+
+.cardPercentage {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.percentageValue {
+    color: #05cd99;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.percentageLabel {
+    color: #a3aed0;
+    font-size: 12px;
+}
