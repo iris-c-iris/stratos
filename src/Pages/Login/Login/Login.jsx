@@ -5,8 +5,8 @@ import { useState } from "react";
 import './Login.css';
 import { FaUser, FaLock } from "react-icons/fa";
 import logo from './BlackLogo.png';
+// import background from './Login/background.png';
 import { Link } from 'react-router-dom';
-import Header from '../../../Components/Header/Header';
 
 const Login = () => {
     const [selectedRole, setSelectedRole] = useState('Employee');
