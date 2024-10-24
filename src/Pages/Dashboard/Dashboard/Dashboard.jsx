@@ -5,7 +5,7 @@ import plusBlue from '../../../Components/Assets/plusBlue.png';
 import cash from '../../../Components/Assets/cash.png';
 import box from '../../../Components/Assets/box.png';
 import alert from '../../../Components/Assets/alert.png';
-import Sidebar from '../../../Components/SideBarEmployee/SideBarEmployee';
+import Sidebar from '../../../Components/SideBarManager/SideBarManager';
 import Header from '../../../Components/Header/Header';
 import SmallCard from '../../../Components/SmallCard/SmallCard';
 import ComplexTable from '../../../Components/InOutTable/ComplexTable';
