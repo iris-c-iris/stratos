@@ -3,11 +3,11 @@ import './TaskList.css'; // Import the non-modular CSS
 
 const TaskList = () => {
     const [tasks, setTasks] = useState([
-        { title: "Landing Page Design", status: "In Progress" },
-        { title: "Dashboard Builder", status: "Done" },
-        { title: "Mobile App Design", status: "In Progress" },
-        { title: "Illustrations", status: "Pending" },
-        { title: "Promotional LP", status: "In Progress" }
+        { title: "Client 1 Onboarding", status: "In Progress" },
+        { title: "Layout Floor 2", status: "Done" },
+        { title: "Maintenance Block A", status: "In Progress" },
+        { title: "Lunch", status: "Pending" },
+        { title: "Go Home", status: "In Progress" }
     ]);
 
     const handleCheckboxChange = (index) => {
