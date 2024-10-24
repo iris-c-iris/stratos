@@ -15,6 +15,15 @@ export const Auth = () => {
             console.error(err);
         }    
     };
+
+    const logout = async () => {
+        try {
+          await signOut(auth);
+        } catch (err) {
+          console.error(err);
+        }
+      };
+
     return /*(
         <div>
             <input placeholder="Email..."
