@@ -1,0 +1,97 @@
+.chartContainer {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 23px 26px;
+    display: flex;
+    flex-direction: column; /* Ensure vertical layout */
+}
+
+.chartHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.chartTitle {
+    color: #2b3674;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.chartPeriod {
+    display: flex;
+    align-items: center;
+    color: #a3aed0;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.chartPeriod img {
+    margin-left: 5px;
+}
+
+.chartContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the chart image */
+    justify-content: space-between; /* Space between chart image and legend */
+    flex-grow: 1;
+}
+
+.chartImage {
+    width: 143px;
+    height: 143px;
+    margin: 0 auto; /* Center horizontally */
+    display: block;
+}
+
+.chartLegend {
+    display: flex;
+    justify-content: space-around;
+    padding: 14px 31px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 18px 40px rgba(112, 144, 176, 0.12);
+    width: 100%; /* Ensure it takes the full width at the bottom */
+    margin-top: 20px;
+}
+
+.legendItem {
+    display: flex;
+    align-items: center;
+}
+
+.legendColor {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.legendText {
+    display: flex;
+    flex-direction: column;
+}
+
+.legendLabel {
+    color: #a3aed0;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.legendValue {
+    color: #2b3674;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+@media (max-width: 991px) {
+    .chartContainer {
+        padding: 20px;
+    }
+
+    .chartLegend {
+        padding: 14px 20px;
+    }
+}

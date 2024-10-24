@@ -1,0 +1,77 @@
+.chartContainer {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.chartTitle {
+    color: #a3aed0;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.chartContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.chartValue {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 20px;
+}
+
+.visitors {
+    color: #2b3674;
+    font-size: 34px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.label {
+    color: #a3aed0;
+    font-size: 14px;
+}
+
+.barChart {
+    display: flex;
+    justify-content: space-between; /* Ensure space between bars */
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.barWrapper {
+    display: flex;
+    flex-direction: column; /* Align labels below bars */
+    align-items: center;
+    margin: 0 5px; /* Add margin to space out the bars */
+}
+
+.bar {
+    width: 14px;
+    background: linear-gradient(to top, rgba(67, 24, 255, 0.4), #4318ff);
+    border-radius: 60px 60px 0 0; /* Curved top */
+    margin-bottom: 5px; /* Space between bar and label */
+}
+
+.barLabel {
+    color: #b0bbd5;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.chartFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 991px) {
+    .chartContainer {
+        padding: 20px;
+    }
+}
