@@ -1,6 +1,6 @@
-/* Make the Employee-box take up 75% of the page */
+
 .Employee-box {
-    width: 85%; /* 75% width of the page */
+    width: 85%; /* 85% width of the page */
     background: rgb(255, 255, 255);
     border: 2px solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);

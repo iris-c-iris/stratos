@@ -1,0 +1,98 @@
+
+.inventory-box {
+    width: 85%; /* 75% width of the page */
+    background: var(--Secondary-Grey-300, #f4f7fe);
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    padding: 30px 40px;
+    color: #000000;
+    position: absolute;
+    right: 0; 
+    top: 0;
+    height: 100vh; /* Take up the full viewport height if necessary */
+    top: 9%;
+    bottom: 15%;
+}
+
+/* Center heading */
+.inventory-box h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+/* Flex container for input boxes */
+.input-row {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of input fields if they exceed available space */
+    gap: 20px; /* Add space between input boxes */
+}
+
+/* Input box styling */
+.inventory-box .input-box {
+    flex: 1 1 calc(33.333% - 20px); /* Each input takes up 1/3 of the row with space in between */
+    position: relative;
+    min-width: 200px;
+    max-width: 400px; /* Optional: minimum width for each input */
+    margin: 20px 0; /* Add some space around each input */
+}
+
+.description-box {
+    flex: 1 1 100%; /* Takes up the full width of the remaining space */
+    height: 150px; /* Set a larger height */
+}
+
+.description-box textarea {
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 16px;
+    resize: none; /* Prevents the user from resizing the textarea */
+}
+
+/* Input field styles */
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border: black;
+    outline: black;
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 40px;
+    font-size: 16px;
+    color: black;
+    padding: 20px 45px 20px 20px;
+}
+
+/* Placeholder text */
+.input-box input::placeholder {
+    color: rgb(165, 165, 165);
+}
+
+/* Icon styling inside input fields */
+.input-box .icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+/* Submit button styling */
+.inventory-box button {
+    width: 200px; /* Set a smaller fixed width */
+    height: 45px;
+    background: blue;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 700;
+    margin: 20px auto; /* Center the button horizontally */
+    display: block;
+}

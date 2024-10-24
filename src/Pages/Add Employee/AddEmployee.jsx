@@ -22,7 +22,7 @@ function AddEmployee() {
                             <i className="icon"></i>
                         </div>
                         <div className="input-box">
-                            <input type="email" placeholder="Employee number" />
+                            <input type="text" placeholder="Employee number" />
                             <i className="icon"></i>
                         </div>
                     </div>
