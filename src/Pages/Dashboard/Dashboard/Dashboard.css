@@ -1,0 +1,38 @@
+.dashboard {
+    background: var(--Secondary-Grey-300, #f4f7fe);
+    display: flex;
+    padding: 0; /* Remove padding to eliminate extra space */
+    overflow: hidden;
+    width: 100%; /* Ensure it takes full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.mainContent {
+    flex: 1;
+    padding: 20px;
+    max-width: 100%; /* Ensure it takes full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.cardGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.chartsSection,
+.tablesAndCharts,
+.bottomSection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 991px) {
+    .dashboard {
+        flex-direction: column;
+    }
+}

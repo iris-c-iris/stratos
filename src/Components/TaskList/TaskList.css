@@ -1,0 +1,75 @@
+.taskContainer {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.taskHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.taskIcon {
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+}
+
+.taskTitle {
+    color: #2b3674;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.taskList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.taskItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.taskCheckbox {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.taskName {
+    flex-grow: 1;
+    color: #2b3674;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.taskStatus {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+
+.inprogress {
+    background-color: #ffe8d3;
+    color: #ff784b;
+}
+
+.done {
+    background-color: #e6faf5;
+    color: #05cd99;
+}
+
+.pending {
+    background-color: #f3efff;
+    color: #6c5dd3;
+}
+
+@media (max-width: 991px) {
+    .taskContainer {
+        padding: 15px;
+    }
+}

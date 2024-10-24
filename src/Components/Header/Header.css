@@ -1,69 +1,103 @@
 .header {
-    background-color: white; /* Changed from black to white */
-    padding: 10px 20px;
-    color: black; /* Changed from white to black */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    height: 60px;
+    margin-bottom: 20px;
+    width: 100%; /* Ensure it takes full width */
 }
 
-.header-logo {
-    max-height: 50px;
-    height: auto;
-    width: auto;
-    margin-right: 10px;
+.breadcrumb {
+    font-size: 14px;
+    color: #707eae;
 }
 
-.header-content {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 100%;
+.breadcrumb-item {
+    font-weight: 500;
 }
 
-.search-bar-container {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 20px;
-    flex-grow: 0;
+.breadcrumb-separator {
+    margin: 0 5px;
 }
 
-.searchContainer {
-    border-radius: 30px;
-    background-color: rgba(238, 238, 238, 1); /* Changed from dark to light */
+.page-title {
+    color: #f4f7fe;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.68px;
+}
+
+.header-actions {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 5px 10px;
-    max-width: 422px;
-    width: 100%;
-    color: black; /* Changed from white to black */
-    height: auto;
 }
 
-@media (max-width: 600px) {
-    .header-content h1 {
-        display: none;
-    }
+.search-form {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 49px;
+    padding: 11px 20px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.search-input {
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    color: #8f9bba;
+    outline: none;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.profile-button {
+    width: 41px;
+    height: 41px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.profile-button img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+@media (max-width: 991px) {
     .header {
         flex-direction: column;
-        height: auto;
+        align-items: flex-start;
     }
-    .header-content {
-        justify-content: center;
-    }
-    .search-bar-container {
-        justify-content: center;
-        padding-right: 0;
+
+    .header-actions {
         margin-top: 10px;
         width: 100%;
+        justify-content: space-between;
     }
 }
