@@ -11,7 +11,7 @@ const menuItems = [
     { icon: dashboard, label: "Dashboard" },
     { icon: plus, label: "Inventory" },
     { icon: analytics, label: "Analytics" },
-    { icon: edit, label: "Edit Employees" },
+    { icon: edit, label: "Add Employee" },
     { icon: profile, label: "Profile" },
     { icon: logout, label: "Sign Out" }
 ];
